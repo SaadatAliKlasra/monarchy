@@ -1,0 +1,46 @@
+.breakdown-payment-method-switch {
+  .MuiChip-clickable {
+    font-size: 1em;
+    padding: 8px;
+    font-weight: 500;
+
+    background-color: rgba($color: #9b9b9b, $alpha: 0.25);
+    color: #9b9b9b;
+
+    .MuiChip-label {
+      position: relative;
+      top: -1px;
+    }
+
+    &.selected {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.quote-breakdown__list {
+  color: #9b9b9b;
+}
+
+.quote-breakdown__list__item {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  &:last-child {
+    border-top: 1px solid rgba($color: #9b9b9b, $alpha: 0.5);
+    padding-top: 16px;
+    font-weight: 500;
+  }
+}
+
+.section-what-next {
+  margin-top: 64px;
+  padding: 48px 0;
+  background: rgba($color: #9b9b9b, $alpha: 0.15);
+}

@@ -1,0 +1,19 @@
+.locally-owned-container {
+  .certifications-container {
+    margin-top: 50px;
+
+    @media (min-width: 960px) {
+      margin-top: 150px;
+    }
+  }
+}
+
+.locally-owned-heading {
+  margin-top: 100px;
+  text-align: center;
+
+  @media (min-width: 960px) {
+    text-align: left;
+    margin-top: 50;
+  }
+}

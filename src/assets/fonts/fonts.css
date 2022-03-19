@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Larsseit';
+  src: url('./Larsseit.eot');
+  src: local('☺'), url('./Larsseit.woff') format('woff'),
+    url('./Larsseit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('./Larsseit-Bold.eot');
+  src: local('☺'), url('./Larsseit-Bold.woff') format('woff'),
+    url('./Larsseit-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('./Larsseit-Medium.eot');
+  src: local('☺'), url('./Larsseit-Medium.woff') format('woff'),
+    url('./Larsseit-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

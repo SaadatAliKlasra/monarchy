@@ -1,0 +1,175 @@
+.card {
+  position: relative;
+}
+
+.FancyInput--Radio input {
+  display: none;
+
+  &:checked + .card .FancyInput__Text .FancyInput__Text__checkmark {
+    transform: scale(1);
+  }
+
+  &:checked + .card .FancyInput__Text {
+    background-color: rgb(223, 193, 74);
+    color: #fff;
+
+    .title {
+      color: #fff;
+    }
+
+    .subtitle {
+      color: #fff;
+    }
+  }
+}
+
+.FancyInput__Text__checkmark {
+  transition: 0.25s all ease;
+  transition-delay: 0.05s;
+  transform: scale(0);
+
+  font-size: 16px;
+
+  @media (min-width: 1024px) {
+    font-size: 17px;
+  }
+}
+
+.FancyInput {
+  cursor: pointer;
+}
+
+.FancyInput__Text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 30;
+
+  transition: all 0.2s ease;
+
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 22px;
+  }
+
+  .subtitle {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #9b9b9b;
+    font-size: 14px;
+  }
+}
+
+.FancyInput--FillOnSelected {
+  img {
+    z-index: 20;
+  }
+
+  .FancyInput__Text {
+    z-index: 20;
+    position: relative;
+  }
+
+  input {
+    &:checked + .card .FancyInput--FillFullBackground {
+      opacity: 1;
+    }
+  }
+}
+
+.FancyInput--Image img {
+  width: 100%;
+  position: relative;
+  z-index: 30;
+}
+
+.FancyInput--FillFullBackground {
+  position: absolute;
+  opacity: 0;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(223, 193, 74);
+  height: 100%;
+  width: 100%;
+  transition: all 0.17s ease;
+}
+
+.FancyInput--FillFullOnSelected {
+  .FancyInput__Text {
+    text-align: center;
+    justify-content: center;
+
+    > div {
+      text-align: center;
+      // width: 100%;
+    }
+  }
+
+  .FancyInput__Text__checkmark {
+    display: none;
+  }
+
+  input:checked + .card .FancyInput--FillFullBackground {
+    opacity: 1;
+  }
+}
+
+.FancyInput--RoofingImages,
+.FancyInput--ForcedAirPowerImages {
+  .title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.FancyInput--RoofingImages,
+.FancyInput--ForcedAirPowerImages {
+  .img-selected {
+    display: none;
+  }
+}
+
+.FancyInput--RoofingImages,
+.FancyInput--ForcedAirPowerImages {
+  input:checked ~ img.img-initial {
+    display: none;
+  }
+}
+
+.FancyInput--RoofingImages,
+.FancyInput--ForcedAirPowerImages {
+  input:checked ~ img.img-selected {
+    display: block;
+  }
+}
+
+.FancyInput--RoofingImages.FancyInput--Image img {
+  width: 100px;
+  margin: 64px auto 32px;
+}
+
+.FancyInput--RoofingImagesQuestionMark.FancyInput--Image img {
+  width: 80px;
+  margin: 64px auto 32px;
+}
+
+.FancyInput--ForcedAirPowerImages.FancyInput--Image img {
+  width: 42px;
+  margin: 64px auto 32px;
+}
+
+.FancyInput--ForcedAirPowerImagesQuestionMark.FancyInput--Image img {
+  width: 72px;
+  margin: 64px auto 32px;
+}

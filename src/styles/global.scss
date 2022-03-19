@@ -1,0 +1,233 @@
+@import '../assets/fonts/fonts.css';
+@import './typography';
+@import './utils';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Larsseit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.color-secondary-2 {
+  color: #9b9b9b;
+}
+
+.mainContent {
+  margin-top: 64px;
+
+  @media (min-width: 1024px) {
+    margin-top: 112px;
+  }
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.btn {
+  border-radius: 28px;
+  color: #fff;
+  position: relative;
+  box-shadow: none;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(8px);
+    }
+  }
+}
+
+a.btn-link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.btn {
+  .MuiCircularProgress-root {
+    position: absolute;
+  }
+}
+
+.btn .MuiCircularProgress-svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  .MuiCircularProgress-circle {
+    stroke: #fff;
+  }
+}
+
+.btn-primary {
+  font-weight: 500;
+  text-decoration: none;
+
+  &.MuiButton-contained {
+    color: #fff;
+
+    background: rgb(223, 193, 74);
+    background: -webkit-linear-gradient(
+      139deg,
+      rgb(223, 193, 74),
+      rgb(197, 150, 34)
+    );
+    background: linear-gradient(139deg, rgb(223, 193, 74), rgb(197, 150, 34));
+
+    box-shadow: none;
+    font-family: Larsseit, sans-serif;
+    text-transform: none;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 28px;
+    padding: 8px 24px;
+
+    &:hover {
+      box-shadow: none;
+      background-color: lighten(#000, 16%);
+    }
+  }
+}
+
+.btn {
+  font-weight: 500;
+
+  &.MuiButton-outlined {
+    box-shadow: none;
+    font-family: Larsseit, sans-serif;
+    text-transform: none;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 28px;
+    padding: 8px 24px;
+    border-width: 2px;
+    border-color: #000;
+
+    &:hover {
+      box-shadow: none;
+      background-color: lighten(#fff, 10%);
+
+      border-color: lighten(#000, 75%);
+    }
+  }
+}
+
+.btn-facebook {
+  svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  &.MuiButton-contained {
+    background-color: #3b5998;
+
+    &:hover {
+      box-shadow: none;
+      background-color: lighten(#3b5998, 10%);
+    }
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.field {
+  .MuiInputAdornment-positionEnd {
+    margin-left: 8px;
+    position: absolute;
+    right: 8px;
+  }
+
+  .MuiInputBase-input {
+    padding: 16px 24px;
+    -webkit-appearance: none;
+    // box-shadow: 0 0 2px inset rgba($color: #9b9b9b, $alpha: 0.25);
+    border: 2px solid rgba($color: #9b9b9b, $alpha: 0.25);
+    border-radius: 32px;
+    font-family: 'Larsseit', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:focus,
+    &:hover {
+      // box-shadow: 0 0 2px inset #9b9b9b;
+      border: 2px solid #9b9b9b;
+    }
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  .Mui-error {
+    .MuiInputBase-input {
+      border: 2px solid #f44336;
+
+      &:focus,
+      &:hover {
+        border: 2px solid #f44336;
+      }
+    }
+  }
+
+  .MuiInput-underline:after,
+  .MuiInput-underline:before {
+    display: none;
+  }
+}
+
+.card.MuiPaper-root {
+  box-shadow: none;
+  border-radius: 0;
+  box-shadow: 0 2px 6px 0 rgba($color: #000, $alpha: 0.1);
+
+  &.card--no-border {
+    > div {
+      border: 0;
+
+      &:hover {
+        border: 0;
+      }
+    }
+  }
+
+  > div {
+    border: 1.5px solid rgba(155, 155, 155, 0.25);
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: #dfc14a;
+    }
+  }
+}
+
+input {
+  -webkit-appearance: none;
+}

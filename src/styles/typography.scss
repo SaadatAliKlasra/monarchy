@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #242423;
+  // font-family: Larsseiet;
+  font-family: 'Larsseit', sans-serif;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 41px;
+
+  @media (min-width: 1024px) {
+    font-size: 48px;
+    line-height: 53px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.subtitle-sm {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 32px;
+
+  @media (min-width: 640px) {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 64px;
+  }
+}
+
+p,
+a {
+  color: #333533;
+}
+
+a {
+  // text-decoration: none;
+
+  &.no-text-decoration-default {
+    text-decoration: none;
+  }
+
+  color: inherit;
+
+  &:hover {
+    &.no-text-decoration {
+      text-decoration: none;
+    }
+
+    color: #4a4a4a;
+  }
+}
