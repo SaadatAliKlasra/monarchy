@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Box, Button, Container, FormControl, Grid, IconButton, InputLabel, Select, MenuItem } from '@material-ui/core';
+import { Box, Button, Container, FormControl, Grid, IconButton, InputLabel,Select, MenuItem } from '@material-ui/core';
 // import Select, { SelectChangeEvent } from '@mui/material/Select';
 import CallIcon from '@material-ui/icons/Call';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -108,7 +108,7 @@ const Navigation = (props: any) => {
   // if (props.instantPrice) {
   // }
   const [values, setValues] = React.useState([
-    "Roofing ", "Siding", "Insulation", "Hvac"
+    "Roofing ", "Siding", "Insulation", "Hvac" 
   ]);
   const [selected, setSelected] = useState(1);
 
@@ -122,35 +122,35 @@ const Navigation = (props: any) => {
       <div style={{ position: 'relative' }}></div>
 
       <nav
-        className={`main-navigation ${props.instantPrice
+        className={`main-navigation ${
+          props.instantPrice
             ? 'main-navigation--instant-price'
             : props.landing
-              ? 'main-navigation--landing'
-              : ''
-          }`}
+            ? 'main-navigation--landing'
+            : ''
+        }`}
       >
         <Container maxWidth="xl" className="container">
           <Grid
             container
             direction="row"
             alignItems="center"
-            justifyContent="space-between"
+            justify="space-between"
           >
             <div className="main-navigation__left">
-              <div className="main-navigation__left__items" style={{ display: 'flex', whiteSpace: 'nowrap' }}>
+              <div className="main-navigation__left__items" style={{display:'flex',whiteSpace:'nowrap'}}>
                 <Link to="/about-us">About us</Link>
                 {/* <Link to="/how-we-work">Our Services</Link> */}
                 <Link to="/financing">Financing</Link>
-                <Dropdown style={{ marginLeft: '10px' }}>
-                  <Dropdown.Toggle id="dropdown-autoclose-true"
-                    style={{ border: 'none', color: '#000', background: 'transparent', fontWeight: 'bold', fontSize: '16px' }}>
+                <Dropdown style={{marginLeft:'10px'}}>
+                  <Dropdown.Toggle id="dropdown-autoclose-true" 
+                    style={{border:'none',color:'#000',background:'transparent',fontWeight:'bold',fontSize:'16px'}}>
                     Our Services
                   </Dropdown.Toggle>
 
-                  <Dropdown.Menu
-                    style={{
-                      display: 'flex', flexDirection: 'column', padding: '10px', marginTop: '30px',
-                      background: 'white', textAlign: 'start', alignItems: 'flex-end'
+                  <Dropdown.Menu 
+                    style={{display: 'flex', flexDirection: 'column', padding:'10px',marginTop:'30px',
+                    background:'white',textAlign:'start', alignItems: 'flex-end'
                     }}>
                     <Dropdown.Item href="/roofing">Roofing</Dropdown.Item>
                     <Dropdown.Item href="/siding">Siding</Dropdown.Item>
@@ -205,7 +205,7 @@ const Navigation = (props: any) => {
                       marginRight: '8px',
                     }}
                   />
-                  <span className="text" style={{ whiteSpace: 'nowrap' }}>(613) 505-0552</span>
+                  <span className="text" style={{whiteSpace:'nowrap'}}>(613) 505-0552</span>
                 </a>
 
                 <div className="mobile-navigation__signin-link-container no-margin-bottom desktop-nav">

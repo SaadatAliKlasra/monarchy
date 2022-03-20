@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import {
   ThemeProvider,
-  createTheme,
+  createMuiTheme,
   CircularProgress,
 } from '@material-ui/core';
 
@@ -36,7 +36,7 @@ import HowWeWork2 from './pages/HowWeWork/HowWeWork2';
 
 import './styles/global.scss';
 
-let theme = createTheme();
+let theme = createMuiTheme();
 
 const PrivateRoute = ({ component, ...options }: any) => {
   const [reAuthenticateWorking, setReAuthenticateWorking] =
@@ -86,7 +86,7 @@ function App() {
       .then((res) => {
         dispatch(signInSuccess(res));
       })
-      .catch((e) => { });
+      .catch((e) => {});
   }, []);
 
   return (

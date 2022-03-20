@@ -176,7 +176,7 @@ export default (props: any) => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={4} justifyContent="center">
+        <Grid container spacing={4} justify="center">
           <Grid item xs={12}>
             <motion.h1
               initial={{
@@ -214,7 +214,7 @@ export default (props: any) => {
 
       <Box className="section section-how-we-work">
         <Container>
-          <Grid container justifyContent="center" spacing={4}>
+          <Grid container justify="center" spacing={4}>
             <Grid item xs={12}>
               <h1 className="title text-center">Our Services</h1>
             </Grid>
@@ -426,7 +426,7 @@ export default (props: any) => {
 
       <Box className="section section-white section-why-monarchy" pt={0} pb={5}>
         <Container>
-          <Grid container justifyContent="center" spacing={4}>
+          <Grid container justify="center" spacing={4}>
             <Grid item xs={12}>
               <h1 className="title" style={{ marginBottom: '30px' }}>
                 Why Monarchy?
@@ -574,7 +574,7 @@ export default (props: any) => {
 
       <Box className="section section-white section-reviews" pb={5}>
         <Container>
-          <Grid container justifyContent="center" spacing={5}>
+          <Grid container justify="center" spacing={5}>
             <Grid item xs={12}>
               <h1 className="title" style={{ marginBottom: '16px' }}>
                 Reviews
